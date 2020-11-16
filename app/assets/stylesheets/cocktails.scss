@@ -1,0 +1,21 @@
+// Place all the styles related to the cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.question > h5 > a {
+  text-decoration: none;
+  color: black;
+  margin-top-bottom: 60px;
+
+}
+
+.container > h1 {
+  text-align: center;
+  text-shadow:5px 3px 5px pink,
+                  3px 0px 3px lightgreen;
+  line-height: 70px;
+}
+
+.show-container > h3 {
+  text-align: center;
+  text-shadow:5px 3px 5px lightgreen,
+}

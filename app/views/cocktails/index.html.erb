@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>GRAB A DRINK!</h1>
+  <div class="row justify-content-center">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <%= link_to cocktail_path(cocktail) do %>
+          <div class="p-3 mb-2 text-white cocktail-card">
+            <h4><%= cocktail.name.upcase %></h4>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="question text-center" >
+  <h5><%= link_to "What do you want to sip?", new_cocktail_path %></h5>
+</div>
+
+<!-- center title -->
+<!-- background black -->
+<!-- some cool index feature -->
+<!-- move question further down better call to action -->
+<!-- seed more ingredients -->
+<!-- consistent down or upcase -->
+<!-- sort alphabetically? -->
+<!-- responsiveness -->
+<!-- different images -->
+<!-- delete cocktail or ingredient -->
+<!-- DEPLOYYY -->

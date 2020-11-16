@@ -1,0 +1,9 @@
+<h2>Add a description and ingredient</h2>
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+  <%= f.association :ingredient, label_method: :name, value_method: :id, include_blank: false %>
+
+  <%= f.submit "create cocktail", class: "btn btn-primary"  %>
+<% end %>
+
+<%= link_to "Back to drinks", cocktails_path %>
